@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <carousel (activeSlideChange)="onActiveSlideChange($event)">
+        <slide *ngFor="let slide of slides; let index=index">
+            <div [@openClose]="slide.open ? 'open' : 'closed'" class="carousel-txt">
+                <span *ngFor="let text of slide.texts" [ngClass]="text.colorCls">{{text.value}}<br></span>
+            </div>
+            <img [src]="slide.image" class="carousel-img">
+        </slide>
+    </carousel>
+
+
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Somos una empresa integradora de tecnologías y soluciones con un equipo de profesionales experimentados. Queremos ser el aliado tecnológico para atender las diversas necesidades de desarrollo, implementación de recursos informáticos, herramientas
+                    colaborativas y seguridad informática, en tu empresa o institución educativa.
+                </p>
+                <p>Con nuestras soluciones los guiaremos y ayudaremos a impulsar su transformación digital y gestión de procesos de TI. También al mejor uso de la misma para impulsar la colaboración y mejorar la comunicación entre sus usuarios.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa fa-home" aria-hidden="true"></i> <b>¿Por qué lo hacemos?</b>
+                <p>Creemos en el uso de la tecnología como medio para mejorar la calidad de vida y ser una mejor sociedad.</p>
+            </div>
+            <div class="col-md-4">
+
+                <i class="fa fa-map-marker" aria-hidden="true"></i> <b>¿Cómo lo hacemos?</b>
+                <p>Mejorando la experiencia de adopción e implementación con tecnologías intuitivas y cotidianas.</p>
+            </div>
+            <div class="col-md-4">
+
+                <i class="fa fa-tv" aria-hidden="true"></i> <b>¿Qué hacemos?</b>
+                <p>Integrando las mejores tecnologías de hardware, software y servicios especializados para transformar digitalmente tu empresa.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
