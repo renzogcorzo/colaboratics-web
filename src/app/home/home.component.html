@@ -4,7 +4,7 @@
             <div [@openClose]="slide.open ? 'open' : 'closed'" class="carousel-txt">
                 <span *ngFor="let text of slide.texts" [ngClass]="text.colorCls">{{text.value}}<br></span>
             </div>
-            <img [src]="slide.image" class="carousel-img">
+            <img [src]="slide.image" class="banner-img">
         </slide>
     </carousel>
 
@@ -38,9 +38,11 @@
             </div>
         </div>
     </div>
-
-
-
+    <div class="row">
+        <div class="col-md-12">
+            <img src="assets/images/bannertrabajadesdecasa.png" class="banner-img">
+        </div>
+    </div>
 
 
 </div>
