@@ -54,7 +54,14 @@ export class HomeComponent implements OnInit {
   slides: any[] = [{
     image: '/assets/images/ergoset1.jpg',
     open: true,
-    texts: []
+    texts: [{
+      value: 'Creamos',
+      colorCls: 'cyan'
+    }, {
+      value: 'TUS proyectos',
+      colorCls: 'black'
+    }
+    ]
   },
   {
     image: '/assets/images/ergoset2.jpg',
