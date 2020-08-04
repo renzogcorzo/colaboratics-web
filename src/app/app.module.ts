@@ -12,6 +12,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
 import { FooterContactComponent } from './footer-contact/footer-contact.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { ParallaxDirective } from './parallax.directive';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     FooterComponent,
     FooterAddressComponent,
     SocialMediaComponent,
-    FooterContactComponent
+    FooterContactComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,

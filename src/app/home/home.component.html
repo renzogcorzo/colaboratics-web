@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<section class="section">
     <carousel (activeSlideChange)="onActiveSlideChange($event)">
         <slide *ngFor="let slide of slides; let index=index">
             <div [@openClose]="slide.open ? 'open' : 'closed'" class="carousel-txt">
@@ -8,7 +8,8 @@
         </slide>
     </carousel>
 
-
+</section>
+<section class="section">
     <div class="container">
         <hr>
         <div class="row">
@@ -38,11 +39,17 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <img src="assets/images/bannertrabajadesdecasa.png" class="banner-img">
+</section>
+<section class="section">
+    <div class="parallax-container">
+        <div class="parallax" appParallax [ratio]="-0.3"><img src="assets/images/bannertrabajadesdecasa.png" title="Soluciones para crecer" style="display: block; transform: translate3d(-50%, 72px, 0px);"></div>
+    </div>
+    <div class="section-image">
+        <div class="section-cover"></div>
+        <div class="section-text apear-js align_left container">
+            <div id="txt-wfh-box"></div>
+            <span id="txt-wfh-1">TRABAJA DESDE CASA</span>
+            <span id="txt-wfh-2">Soluciones que aumentan tu productividad</span>
         </div>
     </div>
-
-
-</div>
+</section>

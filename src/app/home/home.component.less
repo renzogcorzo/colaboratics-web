@@ -2,6 +2,17 @@
     color: #000;
 }
 
+section {
+    display: block;
+    position: relative
+}
+
+.section-image {
+    padding: 150px 0 120px;
+     position: relative; 
+    width: 100%;
+}
+
 .banner-img {
     display: block;
     width: 100%;
@@ -9,11 +20,109 @@
     object-fit: cover;
 }
 
+.parallax-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax, .parallax-container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate3d(0,0,0);
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+.section-text {
+    position: relative;
+    z-index: 2;
+}
+
+.section-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.align_center {
+     text-align: center;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#div1, #div2 {
+    position: relative;
+    width: 100%;
+    
+    background-color: #fff;
+    z-index: 2;
+}
+
+#div1 {
+    top: 0;
+    height: 150px;
+}
+
+#txt-wfh-box, #txt-wfh-1, #txt-wfh-2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#txt-wfh-box, #txt-wfh-1{
+    top:-70px !important;
+}
+
+#txt-wfh-box {
+    padding: 24px;
+    opacity: 0.5;
+    background-color: #131e4f;
+    width: 480px;
+    height: 84px;
+}
+#txt-wfh-1 {
+    font-size: 40px;
+    color: #fff;
+    padding: 12px;
+}
+
+#txt-wfh-2 {
+    font-size: 16px;
+    color: #fff;
+    padding: 12px;  
+    top: 25px !important;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
 .carousel-txt{
     position: absolute;
     left: 37%;
     right: 50%;
-    top: 50%;
+    top: 45% !important;
     z-index: 2;
     font-size: 36px;
     width: 50%;
@@ -26,6 +135,16 @@
     }
     .carousel-img {
         height: 480px;
+    }
+    #txt-wfh-1 {
+        font-size: 30px;
+    }
+    #txt-wfh-box {
+        width: 420px;
+        height: 64px;
+    }
+    #txt-wfh-2{
+        font-size: 14px;
     }
   }
 
