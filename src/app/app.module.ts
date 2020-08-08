@@ -14,6 +14,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ParallaxDirective } from './parallax.directive';
 import { PreviewComponent } from './preview/preview.component';
+import { StoreComponent } from './store/store.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { PreviewComponent } from './preview/preview.component';
     SocialMediaComponent,
     FooterContactComponent,
     ParallaxDirective,
-    PreviewComponent
+    PreviewComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
