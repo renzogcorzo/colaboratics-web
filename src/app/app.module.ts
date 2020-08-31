@@ -16,6 +16,7 @@ import { ParallaxDirective } from './parallax.directive';
 import { PreviewComponent } from './preview/preview.component';
 import { StoreComponent } from './store/store.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
     CollapseModule.forRoot()
