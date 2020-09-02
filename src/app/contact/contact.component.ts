@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,8 +14,8 @@ export class ContactComponent implements OnInit {
 
   get f() { return this.contactForm.controls; }
 
-  constructor(private formBuilder: FormBuilder) { 
-   
+  constructor(private formBuilder: FormBuilder, private contactService: ContactService) {
+
   }
 
   ngOnInit() {
@@ -30,19 +31,32 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-    // stop here if form is invalid
     if (this.contactForm.invalid) {
-        return;
+      return;
     }
 
-    // display form values on success
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.contactForm.value, null, 4));
-}
+    const textToSend: string = this.getTextToSend();
+    const request = {
+      text: textToSend
+    };
+    this.contactService.sendEmail(request).subscribe(res => {
+      alert('Mensaje enviado');
+    })
 
-onReset() {
+  }
+
+  getTextToSend():string {
+    return "Nombre: " + this.contactForm.value.name + '\n' +
+    "Teléfono: " + this.contactForm.value.phone + '\n' +
+    "Empresa: " + this.contactForm.value.company + '\n' + 
+    "Email: " + this.contactForm.value.email + '\n' +
+    "Mensaje: " + this.contactForm.value.body;
+  }
+
+  onReset() {
     this.submitted = false;
     this.contactForm.reset();
-}
+  }
 
 
 }
