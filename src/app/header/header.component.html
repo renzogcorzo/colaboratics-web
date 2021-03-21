@@ -9,17 +9,20 @@
 
         <div class="collapse navbar-collapse center" id="navbarSupportedContent" [collapse]="isCollapsed">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['home']">Inicio <span class="sr-only"></span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Soluciones<span class="sr-only"></span></a>
+                <li class="nav-item" *ngIf="false" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['']">Soluciones<span class="sr-only"></span></a>
                 </li>
-                <li class="nav-item" *ngIf="false">
-                    <a class="nav-link" href="/store">Tienda Virtual<span class="sr-only"></span></a>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['logitech']">Logitech<span class="sr-only"></span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contáctanos<span class="sr-only"></span></a>
+                <li class="nav-item" *ngIf="false" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['store']">Tienda Virtual<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['contact']">Contáctanos<span class="sr-only"></span></a>
                 </li>
             </ul>
         </div>

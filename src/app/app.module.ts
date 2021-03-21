@@ -19,6 +19,7 @@ import { StoreComponent } from './store/store.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './contact/contact.service';
+import { LogitechComponent } from './logitech/logitech.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ContactService } from './contact/contact.service';
     ParallaxDirective,
     PreviewComponent,
     StoreComponent,
-    ContactComponent
+    ContactComponent,
+    LogitechComponent
   ],
   imports: [
     BrowserModule,
