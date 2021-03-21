@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'store', component: StoreComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'logitech', component: LogitechComponent },
-  { path: 'home*', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: '**', component: HomeComponent }
  
 ];
