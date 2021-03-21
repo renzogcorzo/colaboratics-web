@@ -19,6 +19,8 @@ import { StoreComponent } from './store/store.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './contact/contact.service';
+import { HpfsColaboraticsComponent } from './hpfs-colaboratics/hpfs-colaboratics.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { ContactService } from './contact/contact.service';
     ParallaxDirective,
     PreviewComponent,
     StoreComponent,
-    ContactComponent
+    ContactComponent,
+    HpfsColaboraticsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { ContactService } from './contact/contact.service';
     ReactiveFormsModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    ScrollToModule.forRoot()
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
