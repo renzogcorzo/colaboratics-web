@@ -99,7 +99,7 @@ export class HomeComponent implements OnInit {
       iconCls: 'fa fa-check'
     },{
       header: 'Proyección inalámbrica',
-      body: 'trasmite video, audio y tactil desde tu computador hacia la pantalla de forma inalámbrica, sin cables y botones evitando el contacto con los mismos.',
+      body: 'Trasmite video, audio y tactil desde tu computador hacia la pantalla de forma inalámbrica, sin cables y botones evitando el contacto con los mismos.',
       iconCls: 'fa fa-wifi'
     },{
       header: 'Videoconferencia interactiva',
